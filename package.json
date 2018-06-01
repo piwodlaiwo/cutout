@@ -11,6 +11,7 @@
     "stream-to-promise": "^2.2.0"
   },
   "dependencies": {
+    "parse-color": "^1.0.0",
     "zeros": "^1.0.0"
   }
 }
