@@ -1,11 +1,30 @@
 {
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:coverage": "jest --coverage && cat ./coverage/lcov.info | coveralls",
+    "lint:js": "eslint '**/*.js'",
+    "lint:prettier": "prettier --list-different '**/*.js'",
+    "precommit": "lint-staged"
+  },
+  "greenkeeper": {
+    "ignore": [
+      "eslint",
+      "eslint-plugin-import"
+    ]
   },
   "devDependencies": {
     "assert-dir-equal": "^1.1.0",
     "baboon-image": "^2.1.0",
+    "coveralls": "^3.0.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.11.0",
+    "husky": "^0.14.3",
     "jest": "^23.0.1",
+    "lena": "^1.0.0",
+    "lint-staged": "^7.1.0",
+    "prettier": "^1.12.1",
     "rimraf": "^2.6.2",
     "save-pixels": "^2.3.4",
     "stream-to-promise": "^2.2.0"
