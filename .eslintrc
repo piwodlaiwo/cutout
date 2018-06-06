@@ -4,6 +4,7 @@
     "node": true
   },
   "rules": {
-    "default-case": 0
+    "default-case": 0,
+    "no-warning-comments": ["warn", { "terms": ["todo", "fixme"], "location": "anywhere" }]
   }
 }
