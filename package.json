@@ -1,4 +1,10 @@
 {
+  "name": "@ismay/cutout",
+  "version": "0.0.0",
+  "description": "render a raster image to svg",
+  "author": "ismay",
+  "license": "MIT",
+  "main": "lib/index.js",
   "scripts": {
     "test": "jest",
     "test:coverage": "jest --coverage && cat ./coverage/lcov.info | coveralls",
@@ -11,6 +17,9 @@
       "eslint",
       "eslint-plugin-import"
     ]
+  },
+  "publishConfig": {
+	  "access": "public"
   },
   "devDependencies": {
     "baboon-image": "^2.1.0",
