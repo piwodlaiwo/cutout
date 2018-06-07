@@ -6,21 +6,59 @@
 
 > render a raster image to svg
 
-This library renders raster images to an svg image. It does so by repeatedly generating random shapes and keeping only the best ones. The code has largely been inspired by [Primitive](https://github.com/fogleman/primitive) and its [related ports](#credits).
-
-To start, Primitive works just fine. However, I just wanted something that runs in javascript because that's what I write all my tools in and it allows me to tinker with the logic. My goals with this library were:
+This library renders raster images to an svg image. It does so by repeatedly generating random shapes and keeping only the best ones. The code has largely been inspired by [Primitive](https://github.com/fogleman/primitive) and its [related ports](#credits). Primitive works just fine, but I wanted something that runs in javascript as that makes it easier tinker with the logic. My goals with this library were:
 
 - No native dependencies
 - No browser specific APIs (even though it can be bundled for the browser without any problems)
 - Modular and not tied to a single implementation
-
-This allows everyone to use this library in node and in the browser, for whatever purpose.
 
 ## Installation
 
 ```bash
 npm install -g @ismay/cutout
 ```
+
+## API
+
+### Cutout
+Render a raster image to a collection of shapes
+
+**Kind**: global class
+
+* [Cutout](#Cutout)
+    * [.image](#Cutout+image) ⇒ <code>ndarray</code>
+    * [.shapes](#Cutout+shapes) ⇒ <code>Array</code>
+    * [.difference](#Cutout+difference) ⇒ <code>number</code>
+    * [.step()](#Cutout+step) ⇒ <code>this</code>
+
+<a name="Cutout+image"></a>
+
+### cutout.image ⇒ <code>ndarray</code>
+Get the current image
+
+**Kind**: instance property of [<code>Cutout</code>](#Cutout)
+**Returns**: <code>ndarray</code> - The current image
+<a name="Cutout+shapes"></a>
+
+### cutout.shapes ⇒ <code>Array</code>
+Get the current shapes
+
+**Kind**: instance property of [<code>Cutout</code>](#Cutout)
+**Returns**: <code>Array</code> - The current shapes
+<a name="Cutout+difference"></a>
+
+### cutout.difference ⇒ <code>number</code>
+Get the current difference
+
+**Kind**: instance property of [<code>Cutout</code>](#Cutout)
+**Returns**: <code>number</code> - The current difference
+<a name="Cutout+step"></a>
+
+### cutout.step() ⇒ <code>this</code>
+Add a single new shape
+
+**Kind**: instance method of [<code>Cutout</code>](#Cutout)
+**Returns**: <code>this</code> - The class instance
 
 ## Credits
 

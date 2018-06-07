@@ -19,7 +19,7 @@
     ]
   },
   "publishConfig": {
-	  "access": "public"
+    "access": "public"
   },
   "devDependencies": {
     "baboon-image": "^2.1.0",
@@ -34,6 +34,7 @@
     "prettier": "^1.12.1"
   },
   "dependencies": {
+    "color-blend": "^1.0.3",
     "d3-random": "^1.1.0",
     "debug": "^3.1.0",
     "isndarray": "^1.0.0",
