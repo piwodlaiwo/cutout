@@ -29,6 +29,7 @@
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-import": "^2.11.0",
     "husky": "^0.14.3",
+    "is-svg": "^3.0.0",
     "jest": "^23.0.1",
     "lint-staged": "^7.1.0",
     "prettier": "^1.12.1"
@@ -36,6 +37,7 @@
   "dependencies": {
     "color-blend": "^1.0.3",
     "d3-random": "^1.1.0",
+    "dainty": "^0.2.2",
     "debug": "^3.1.0",
     "isndarray": "^1.0.0",
     "zeros": "^1.0.0"

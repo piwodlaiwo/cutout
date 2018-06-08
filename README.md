@@ -27,7 +27,7 @@ Render a raster image to a collection of shapes
 
 * [Cutout](#Cutout)
     * [.image](#Cutout+image) ⇒ <code>ndarray</code>
-    * [.shapes](#Cutout+shapes) ⇒ <code>Array</code>
+    * [.svg](#Cutout+svg) ⇒ <code>string</code>
     * [.difference](#Cutout+difference) ⇒ <code>number</code>
     * [.step()](#Cutout+step) ⇒ <code>this</code>
 
@@ -38,13 +38,13 @@ Get the current image
 
 **Kind**: instance property of [<code>Cutout</code>](#Cutout)
 **Returns**: <code>ndarray</code> - The current image
-<a name="Cutout+shapes"></a>
+<a name="Cutout+svg"></a>
 
-### cutout.shapes ⇒ <code>Array</code>
-Get the current shapes
+### cutout.svg ⇒ <code>string</code>
+Get the current svg
 
 **Kind**: instance property of [<code>Cutout</code>](#Cutout)
-**Returns**: <code>Array</code> - The current shapes
+**Returns**: <code>string</code> - The current svg
 <a name="Cutout+difference"></a>
 
 ### cutout.difference ⇒ <code>number</code>
