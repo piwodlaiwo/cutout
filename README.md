@@ -26,10 +26,24 @@ Render a raster image to a collection of shapes
 **Kind**: global class
 
 * [Cutout](#Cutout)
+    * [new Cutout(target, [options])](#new_Cutout_new)
     * [.image](#Cutout+image) ⇒ <code>ndarray</code>
     * [.svg](#Cutout+svg) ⇒ <code>string</code>
     * [.difference](#Cutout+difference) ⇒ <code>number</code>
     * [.step()](#Cutout+step) ⇒ <code>this</code>
+
+<a name="new_Cutout_new"></a>
+
+### new Cutout(target, [options])
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| target | <code>ndarray</code> |  | The image to render to svg |
+| [options] | <code>Object</code> |  | Configuration options |
+| [options.alpha] | <code>number</code> | <code>255</code> | The opacity of the shapes (0-255) |
+| [options.shapeTypes] | <code>Array.&lt;string&gt;</code> |  | The types of shapes to use when generating the image |
+| [options.amountOfShapes] | <code>number</code> | <code>1000</code> | The number of shapes to try per step |
+| [options.amountOfAttempts] | <code>number</code> | <code>100</code> | The number of times to mutate each candidate shape |
 
 <a name="Cutout+image"></a>
 
