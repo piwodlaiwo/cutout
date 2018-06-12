@@ -3,6 +3,7 @@
 [![build status][build-badge]][build-url]
 [![coverage status][coverage-badge]][coverage-url]
 [![greenkeeper][greenkeeper-badge]][greenkeeper-url]
+[![package size][package-phobia-badge]][package-phobia-url]
 
 > render a raster image to svg
 
@@ -111,3 +112,5 @@ Add a single new shape
 [greenkeeper-url]: https://greenkeeper.io/
 [coverage-badge]: https://coveralls.io/repos/github/ismay/cutout/badge.svg?branch=master
 [coverage-url]: https://coveralls.io/github/ismay/cutout?branch=master
+[package-phobia-badge]: https://packagephobia.now.sh/badge?p=@ismay/cutout
+[package-phobia-url]: https://packagephobia.now.sh/result?p=@ismay/cutout
