@@ -6,11 +6,11 @@
 
 > render a raster image to svg
 
-This library renders raster images to an svg image. It does so by repeatedly generating random shapes and keeping only the best ones. The code has largely been inspired by [Primitive](https://github.com/fogleman/primitive) and its [related ports](#credits). Primitive works just fine, but I wanted something that runs in javascript as that makes it easier tinker with the logic. My goals with this library were:
+This library renders raster images to an svg image. It does so by repeatedly generating and mutating shapes, keeping only the best ones. The code has largely been ported from [Primitive](https://github.com/fogleman/primitive). Primitive works just fine, but I wanted something that runs in javascript to make it easier to tinker with the logic. Besides that, my goals with this library were:
 
-- No native dependencies
+- No native, non-javascript dependencies (so no node-canvas, as that relies on Cairo)
 - No browser specific APIs (even though it can be bundled for the browser without any problems)
-- Modular and not tied to a single implementation
+- Modular and not tied to a single implementation, so it can fit in any project
 
 ## Installation
 
@@ -41,7 +41,7 @@ Render a raster image to a collection of shapes
 | target | <code>ndarray</code> |  | The image to render to svg |
 | [options] | <code>Object</code> |  | Configuration options |
 | [options.alpha] | <code>number</code> | <code>255</code> | The opacity of the shapes (0-255) |
-| [options.shapeTypes] | <code>Array.&lt;string&gt;</code> |  | The types of shapes to use when generating the image |
+| [options.shapeTypes] | <code>Array.&lt;string&gt;</code> |  | The types of shapes to use when generating the image, available are: `Circle`, `Cubic`, `Ellipse`, `Line`, `Quadratic`, `Rect`, `RotatedRect`, `Square` and `Triangle` |
 | [options.amountOfShapes] | <code>number</code> | <code>1000</code> | The number of shapes to try per step |
 | [options.amountOfAttempts] | <code>number</code> | <code>100</code> | The number of times to mutate each candidate shape |
 
