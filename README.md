@@ -18,6 +18,27 @@ This library renders raster images to an svg image. It does so by repeatedly gen
 npm install -g @ismay/cutout
 ```
 
+## Example
+
+```javascript
+const fs = require('fs');
+const baboon = require('baboon-image');
+const Cutout = require('@ismay/cutout');
+
+// Render the image in lines and squares
+const cutout = new Cutout(baboon, {
+  alpha: 128,
+  shapeTypes: ['Line', 'Square']
+})
+
+// Draw a 100 shapes
+for (var i = 0; i < 100; i++) {
+  cutout.step();
+}
+
+fs.writeFileSync('./baboon.svg', cutout.svg);
+```
+
 ## API
 
 ### Cutout
