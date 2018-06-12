@@ -21,6 +21,13 @@
   "publishConfig": {
     "access": "public"
   },
+  "jest": {
+    "collectCoverageFrom": [
+      "lib/**/*.js",
+      "!lib/rasterizer.js",
+      "!lib/hillclimb.js"
+    ]
+  },
   "devDependencies": {
     "baboon-image": "^2.1.0",
     "coveralls": "^3.0.1",
