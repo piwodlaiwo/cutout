@@ -12,6 +12,15 @@ This library renders raster images to an svg image. It does so by repeatedly gen
 - No browser specific APIs (even though it can be bundled for the browser without any problems)
 - Modular and not tied to a single implementation, so it can fit in any project
 
+## Examples
+
+| Raster input              | Svg result             |
+| :------------------------ | :--------------------- |
+| ![1](images/1-raster.jpg) | ![1](images/1-svg.png) |
+| ![2](images/2-raster.jpg) | ![2](images/2-svg.png) |
+| ![3](images/3-raster.jpg) | ![3](images/3-svg.png) |
+| ![4](images/4-raster.png) | ![4](images/4-svg.png) |
+
 ## Installation
 
 ```bash
