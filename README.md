@@ -3,7 +3,6 @@
 [![build status][build-badge]][build-url]
 [![coverage status][coverage-badge]][coverage-url]
 [![greenkeeper][greenkeeper-badge]][greenkeeper-url]
-[![package size][package-phobia-badge]][package-phobia-url]
 
 > render a raster image to svg
 
@@ -63,6 +62,7 @@ Render a raster image to a collection of shapes
 | target | <code>ndarray</code> |  | The image to render to svg |
 | [options] | <code>Object</code> |  | Configuration options |
 | [options.alpha] | <code>number</code> | <code>255</code> | The opacity of the shapes (0-255) |
+| [options.background] | <code>Array.&lt;number&gt;</code> |  | Optional background color, expressed as an array of four numbers between 0 - 255 for respectively red, green, blue and transparency |
 | [options.shapeTypes] | <code>Array.&lt;string&gt;</code> |  | The types of shapes to use when generating the image, available are: `Circle`, `Cubic`, `RotatedEllipse`, `Ellipse`, `Line`, `Quadratic`, `Rect`, `RotatedRect`, `Square` and `Triangle` |
 | [options.amountOfShapes] | <code>number</code> | <code>1000</code> | The number of shapes to try per step |
 | [options.amountOfAttempts] | <code>number</code> | <code>100</code> | The number of times to mutate each candidate shape |
@@ -112,5 +112,3 @@ Add a single new shape
 [greenkeeper-url]: https://greenkeeper.io/
 [coverage-badge]: https://coveralls.io/repos/github/ismay/cutout/badge.svg?branch=master
 [coverage-url]: https://coveralls.io/github/ismay/cutout?branch=master
-[package-phobia-badge]: https://packagephobia.now.sh/badge?p=@ismay/cutout
-[package-phobia-url]: https://packagephobia.now.sh/result?p=@ismay/cutout
