@@ -43,7 +43,7 @@
     "prettier": "^1.12.1"
   },
   "dependencies": {
-    "bezier-js": "^2.2.5",
+    "bezier": "^0.1.0",
     "color-blend": "^1.0.3",
     "d3-random": "^1.1.0",
     "dainty": "^0.2.2",
@@ -52,7 +52,6 @@
     "point-in-ellipse": "^2.0.0",
     "points": "^3.1.0",
     "robust-point-in-polygon": "^1.0.3",
-    "simplify-js": "^1.2.3",
     "svg-path-properties": "^0.4.4",
     "svg-points": "^6.0.1",
     "zeros": "^1.0.0"
