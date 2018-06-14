@@ -1,0 +1,21 @@
+# Development dotfiles
+.editorconfig
+.eslintignore
+.eslintrc
+.gitattributes
+.gitignore
+.lintstagedrc
+.prettierignore
+.prettierrc
+.travis.yml
+
+# Github templates
+.github/
+
+# Tests and test build results
+coverage
+*.test.js
+*.snap
+
+# Documentation images
+images/
