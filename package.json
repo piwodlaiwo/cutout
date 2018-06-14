@@ -1,6 +1,6 @@
 {
   "name": "@ismay/cutout",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "render a raster image to svg",
   "author": "ismay",
   "license": "MIT",
