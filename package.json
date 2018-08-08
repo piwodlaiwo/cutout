@@ -40,7 +40,7 @@
     "jest": "^23.0.1",
     "lena": "^1.0.0",
     "lint-staged": "^7.1.0",
-    "prettier": "^1.12.1"
+    "prettier": "1.14.0"
   },
   "dependencies": {
     "bezier": "^0.1.0",
