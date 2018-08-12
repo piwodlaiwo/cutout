@@ -40,7 +40,7 @@
     "is-svg": "^3.0.0",
     "jest": "^23.0.1",
     "lena": "^1.0.0",
-    "lint-staged": "^7.1.0",
+    "lint-staged": "^7.2.1",
     "prettier": "^1.12.1"
   },
   "dependencies": {
