@@ -23,6 +23,7 @@
     "access": "public"
   },
   "jest": {
+    "testEnvironment": "node",
     "collectCoverageFrom": [
       "lib/**/*.js",
       "!lib/rasterizers/**",
