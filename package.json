@@ -14,8 +14,17 @@
   },
   "greenkeeper": {
     "ignore": [
+      "baboon-image",
+      "coveralls",
       "eslint",
+      "eslint-config-airbnb-base",
+      "eslint-config-prettier",
       "eslint-plugin-import",
+      "husky",
+      "is-svg",
+      "jest",
+      "lena",
+      "lint-staged",
       "prettier"
     ]
   },
